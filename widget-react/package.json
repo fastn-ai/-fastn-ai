@@ -1,6 +1,6 @@
 {
   "name": "@fastn-ai/widget-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React version of the Fastn widget",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -9,6 +9,10 @@
       "import": "./dist/index.esm.js",
       "require": "./dist/index.cjs.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fastn-ai/-fastn-ai/tree/main/widget-react"
   },
   "files": [
     "dist/",
@@ -31,8 +35,7 @@
   },
   "keywords": [
     "fastn-widget",
-    "react",
-    "fastn",
+    "fastn-ai",
     "widget"
   ],
   "author": "fastn.ai",

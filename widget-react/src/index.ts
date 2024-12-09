@@ -9,6 +9,7 @@ export interface WidgetProps {
     apiKey?: string;
     env?: string;
     customAuth?: boolean;
+    style?: React.CSSProperties;
 }
 
 const Widget: React.FC<WidgetProps> = ({
@@ -20,6 +21,7 @@ const Widget: React.FC<WidgetProps> = ({
     apiKey = "",
     env = "LIVE",
     customAuth = true,
+    style = { minHeight: "300px" },
 }) => {
     const iframeRef = useRef<HTMLIFrameElement>(null);
 
@@ -66,6 +68,6 @@ const Widget: React.FC<WidgetProps> = ({
         src: `${widgetDomain}?origin=${origin}&path=${path}&customAuth=${customAuth}&projectId=${projectId}&tenantId=${tenantId}&theme=${theme}&apiKey=${apiKey}&env=${env}`,
         title: "Fastn Widget",
         width: "100%",
-        style: { minHeight: "300px" },
+        style: style,
     });
 };

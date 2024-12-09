@@ -40,5 +40,6 @@ const Component = () => {
 | apiKey    | string | The API key to use for executing flows (optional).                            |
 | theme     | string | The theme of the widget ("light" or "dark") (optional).                       |
 | env       | string | The environment of the widget ("LIVE" or other values) (optional).            |
+| style     | object | The style object to apply to the widget (optional).                           |
 
 

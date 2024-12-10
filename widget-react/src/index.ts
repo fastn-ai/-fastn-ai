@@ -71,3 +71,5 @@ const Widget: React.FC<WidgetProps> = ({
         style: style,
     });
 };
+
+export default Widget;
